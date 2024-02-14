@@ -246,7 +246,7 @@ abstract contract ERC404 is IERC404 {
 
   /// @notice Function for ERC-20 transfers.
   /// @dev This function assumes the operator is attempting to transfer as ERC-20
-  ///      given this function is only supported on the ERC-20 interface. 
+  ///      given this function is only supported on the ERC-20 interface.
   ///      Treats even small amounts that are valid ERC-721 ids as ERC-20s.
   function transfer(address to_, uint256 value_) public virtual returns (bool) {
     // Prevent burning tokens to 0x0.
